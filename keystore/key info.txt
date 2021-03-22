@@ -1,0 +1,3 @@
+storePassword=12345678
+keyPassword=lapiote
+keyAlias=123456789
