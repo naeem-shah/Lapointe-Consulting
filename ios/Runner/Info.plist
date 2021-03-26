@@ -2,8 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.naeem.lapointeconsulting</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Lapoine Consulting</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -11,19 +17,36 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>lapointeconsultingllc</string>
+	<string>Lapointe Consulting</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(FLUTTER_BUILD_NAME)</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
-	<key>NSPhotoLibraryUsageDescription</key>
-    <string>Need to upload document</string>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>May be some internal library use this you can deny this permission.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>May be some internal library use this you can deny this permission.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>May be some internal library use this you can deny this permission.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>May be some internal library use this you can deny this permission.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>May be some internal library use this you can deny this permission.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Need to upload document</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>May be some internal library use this you can deny this permission.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
