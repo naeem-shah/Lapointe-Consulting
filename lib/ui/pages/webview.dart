@@ -25,10 +25,9 @@ class _WebviewerState extends State<Webviewer> {
           brightness: Brightness.dark,
         ),
         body: InAppWebView(
-          initialUrl: widget.link,
+          initialUrlRequest: URLRequest(url: Uri.parse(widget.link)),
           initialOptions: InAppWebViewGroupOptions(
             crossPlatform: InAppWebViewOptions(
-                debuggingEnabled: true,
                 useOnDownloadStart: true
             ),
           ),
@@ -48,8 +47,8 @@ class _WebviewerState extends State<Webviewer> {
           },
           onDownloadStart: (controller, url) async {
             print("onDownloadStart $url");
-            final taskId = await FlutterDownloader.enqueue(
-              url: url,
+            await FlutterDownloader.enqueue(
+              url: url.toString(),
               savedDir: (await getExternalStorageDirectory()).path,
               showNotification: true,
               openFileFromNotification: true,

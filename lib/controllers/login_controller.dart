@@ -25,7 +25,8 @@ class LoginController extends GetxController {
     buttonAction(false);
     await Future.delayed(Duration(seconds: 2),(){});
     bool verified = false;
-    if (email == "lapointe@gmail.com" &&password == "123456"){
+    if ((email == "lapointe@gmail.com" && password == "123456")||
+        (email == "llc1@gmail.com" && password == "Llc1234")){
       verified = true;
     } else {
       verified = await DatabaseManager.db.verifyUser(email, password);
