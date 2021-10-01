@@ -17,7 +17,7 @@ class _WebviewerState extends State<Webviewer> {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-      onWillPop: () => willPopScope(),
+      onWillPop: () async => willPopScope()??false,
       child: Scaffold(
         appBar: AppBar(
           toolbarHeight: 0,
@@ -70,7 +70,9 @@ class _WebviewerState extends State<Webviewer> {
       title: "Alert!",
       content: Text("Do you really want to exit?"),
       onConfirm: ()=> Get.back(result: true),
-      onCancel: ()=>Get.back(result: false),
+      onCancel: () {
+
+      },
       confirmTextColor: Colors.white
     );
   }
